@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>003misDatos</title>
+</head>
+<!--003misDatos.html y 003misDatos.php: Es el mismo ejercicio anterior, pero
+separando la lógica. En el html crearemos el formulario para introducir los
+datos, y luego recogemos los datos y generamos la tabla en el segundo
+archivo. -->
+<body>
+    <!-- nombre, primer apellido, segundo apellido,email, año en el que naciste y móvil-->
+    <form action="003misDatos.php" method="get"><!--! linea más importante -->
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="name" required><br><br><!--* name indica el nombre de la variable "php"-->
+    
+        <label for="apellidos">Apellido:</label>
+        <input type="text" id="apellidos" name="surname" required><br><br>
+        
+        <label for="segundo_apellido">Segundo apellido:</label>
+        <input type="text" id="segundo_apellido" name="second_surname" required><br><br>
+    
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="number" id="fecha_nacimiento" name="date_of_born" min="1800" max="2010" step="1" required><br><br>
+    
+        <label for="telefono">Número de telefono:</label>
+        <input type="number" id="telefono" name="phone" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
