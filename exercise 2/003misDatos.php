@@ -13,21 +13,14 @@ email, año en el que naciste y móvil. Luego muéstralos por pantalla dentro de
 // }
 
 for($i=0; $i<count($_GET);$i++){
+    $name=$_GET['name'];
+    $surname=$_GET['surname'];
+    $second_surname=$_GET['second_surname'];
+    $email=$_GET['email'];
+    $date_of_born=$_GET['date_of_born'];
+    $phone=$_GET['phone'];
 
-    
 }
-
-$respuesta= (isset($name) && isset($_GET['surname']) && isset($_GET['second_surname']) && isset($_GET['email']) && isset($_GET['date_of_born']) && isset($_GET['phone']))
-? $name = $_GET['name'] && $surname = $_GET['surname'] && $second_surname = $_GET['second_surname'] && $email = $_GET['email'] && $date_of_born = $_GET['date_of_born'] && $phone=$_GET['phone'];
-
-echo "<p>name: $name</p><br /> <p>name: $second_surname</p><br /> <p>name: $phone</p><br />";
- echo "<p> Nada que enseñar </p>";
-
-$respuesta = (isset($_GET['name']) && isset($_GET['surname']) && isset($_GET['second_surname']) && isset($_GET['email']) && isset($_GET['date_of_born']) && isset($_GET['phone']))
-    ? "<p>Nombre: {$_GET['name']}</p><br /><p>Apellido: {$_GET['surname']}</p><br /><p>Segundo Apellido: {$_GET['second_surname']}</p><br /><p>Email: {$_GET['email']}</p><br /><p>Fecha de Nacimiento: {$_GET['date_of_born']}</p><br /><p>Teléfono: {$_GET['phone']}</p>"
-    : "<p>Nada que enseñar</p>";
-
-echo $respuesta;
 
 ?>
 
