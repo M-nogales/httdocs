@@ -15,4 +15,9 @@ Tip: Puedes forzar a realizar la división entera mediante la función
 intdiv($dividendo, $divisor) o pasar un número flotante a entero puedes
 usar la función intval().
 */
+
+$billetes=[500,200,100,50,20,10,5];
+$monedas=[2,1];
+$dinero=187;/*887*/
+
 ?>
