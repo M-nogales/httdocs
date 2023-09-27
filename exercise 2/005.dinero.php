@@ -24,7 +24,7 @@ function spliting ($money){
 
         $result = intdiv($money, $cash[$i]);// todo (int)(money / cash[i])
         if ($result > 0) {
-            $msg=($cash<5)? $result. "monedas de ". $cash[$i]: $result. " billetes de ". $cash[$i]; //? cociente cantidad de billetes
+            $msg=($cash[$i]<5)? $result. "monedas de ". $cash[$i]: $result. " billetes de ". $cash[$i]; //? cociente cantidad de billetes
             echo "$msg <br />";
         }
         $money %= $cash[$i];
@@ -32,4 +32,6 @@ function spliting ($money){
 
 }
 $money = 187;/*887*/
-splitting($money);
+splitting($money);// ! error?
+
+?>
