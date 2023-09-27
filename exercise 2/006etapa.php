@@ -15,9 +15,8 @@ $message=
     $age<=66 ? "adulto" :"jubilado"
     )    
     )
-
-
 );
+/*$age<=3 ? "bebé": ($age<=12 ? "niño": ($age<=18 ? "adolescente": ($age<=66 ? "adulto" :"jubilado")));*/
 
 echo "$message";
 ?>

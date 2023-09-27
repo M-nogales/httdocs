@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
 005dinero.php: A partir de una cantidad de dinero, mostrar su
 descomposición en billetes (500, 200, 100, 50, 20, 10, 5) y monedas (2, 1),
@@ -15,9 +15,21 @@ Tip: Puedes forzar a realizar la división entera mediante la función
 intdiv($dividendo, $divisor) o pasar un número flotante a entero puedes
 usar la función intval().
 */
+function spliting ($money){
+    $cash = [500, 200, 100, 50, 20, 10, 5, 2, 1];
 
-$billetes=[500,200,100,50,20,10,5];
-$monedas=[2,1];
-$dinero=187;/*887*/
+    // todo count max array
 
-?>
+    for ($i = 0; $i < count($cash); $i++) { // ? count cash == cash.lenght()
+
+        $result = intdiv($money, $cash[$i]);// todo (int)(money / cash[i])
+        if ($result > 0) {
+            $msg=($cash<5)? $result. "monedas de ". $cash[$i]: $result. " billetes de ". $cash[$i]; //? cociente cantidad de billetes
+            echo "$msg <br />";
+        }
+        $money %= $cash[$i];
+    }
+
+}
+$money = 187;/*887*/
+splitting($money);
