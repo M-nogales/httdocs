@@ -7,8 +7,17 @@ adolescente entre 13 y 17 años
 adulto entre 18 y 66
 jubilado a partir de 67
 */
-$age=2;
-$message= ((($age<=3 ? "bebé": $age<12) ? "niño": $age<=17 )?"adolescente":$age<=66) ?"adulto":"jubilado";
+$age=67;
+$message= 
+    $age<=3 ? "bebé": (
+    $age<=12 ? "niño": (
+    $age<=18 ? "adolescente": (
+    $age<=66 ? "adulto" :"jubilado"
+    )    
+    )
+
+
+);
 
 echo "$message";
 ?>
