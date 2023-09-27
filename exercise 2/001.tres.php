@@ -2,7 +2,7 @@
 
 echo "Hello world. echo <br />";
 print ("Hello world. print <br />");
-$tex="Hello world. $$";
+$text="Hello world. $$";
 /* lorem */
 // lorem
 ?>
