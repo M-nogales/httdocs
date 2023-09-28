@@ -15,7 +15,7 @@ Tip: Puedes forzar a realizar la división entera mediante la función
 intdiv($dividendo, $divisor) o pasar un número flotante a entero puedes
 usar la función intval().
 */
-function spliting ($money){
+function split_numbers ($money){
     $cash = [500, 200, 100, 50, 20, 10, 5, 2, 1];
 
     // todo count max array
@@ -32,6 +32,6 @@ function spliting ($money){
 
 }
 $money = 187;/*887*/
-splitting($money);// ! error?
+split_numbers($money);// ! error?
 
 ?>
