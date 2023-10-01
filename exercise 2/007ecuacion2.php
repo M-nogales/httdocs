@@ -18,10 +18,10 @@ function check_discriminant($a,$b,$c)  {
 function calc_top($a,$b,$c) : int { // ? buena praxis¿?¿?
     return (sqrt($b**2-4*$a*$c));
 }
- $sol = ($value===true)?calc_top($a,$b,$c): "No existe solución real para esos valores";
+ $square = ($value===true)?calc_top($a,$b,$c): "No existe solución real para esos valores";
  
- 
- 
- echo "$sol"
+ $sol = [(-$b+$square)/(2*$a),(-$b-$square)/(2*$a)]; // ! important () en div
 
+ echo (gettype($square) === "string")?"$square":"El valor de esa ecuación para el valor 
+ positivo de la raiz cuadrada es: ".$sol[0].", para el valor negativo es: ".$sol[1];
 ?>
