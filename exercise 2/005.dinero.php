@@ -31,7 +31,7 @@ function split_numbers ($money){
     }
 
 }
-$money = 187;/*887*/
-split_numbers($money);// ! error?
+$money = 888;/*887*/
+split_numbers($money);
 
 ?>
