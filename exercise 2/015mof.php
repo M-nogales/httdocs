@@ -5,4 +5,5 @@
  * el resultado en un array asociativo ['M' => 44, 'F' => 66] (no utilices variables para contar las M o las F).
  * Finalmente, muestra el resultado por pantalla.
  */
+// ? array_count_values
 ?>
