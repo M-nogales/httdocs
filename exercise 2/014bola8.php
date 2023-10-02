@@ -6,4 +6,19 @@
  * seguro, yo diría que sí, ni de coña, etc...
 Este ejercicio se basa en el juego de la Bola 8 mágica.
  */
+$user_answer="respuesta de usuario adawd";
+$min = 0;
+$max = 8;
+$respuestas = [
+"Sí",
+"No",
+"Quizás",
+"Claro que sí",
+"Por supuesto que no",
+"No lo tengo claro",
+"Seguro",
+"Yo diría que sí",
+"Ni de coña"];
+
+echo "<p> ".$respuestas[random_int($min, $max)] ." </p>";
 ?>
